@@ -2,10 +2,6 @@ import { db } from "@/lib/db"
 import { auth } from "@clerk/nextjs"
 import { NextResponse } from "next/server"
 
-
-// Understand POST, GET, etc
-// different error types (401, 500, etc)
-// how to get the data to send
 export async function POST(
     req: Request,
 ) {
