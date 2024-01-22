@@ -1,10 +1,7 @@
 import { auth } from "@clerk/nextjs"
 import { NextResponse } from "next/server"
-
 import { db } from "@/lib/db"
 
-// after the request so there are params from request
-// are we using PATCH in YouLearn?
 export async function PATCH(
     req: Request,
     { params }: { params: { courseId: string } }
